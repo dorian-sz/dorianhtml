@@ -1,0 +1,25 @@
+body{
+    background-color: #87CEFA;
+    color: #00008B;
+    
+}
+.tablemain{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.h1{
+    float: left;
+}
+.img1{
+    float: right;
+}
+.tdtxt{
+    text-align: justify;
+}
+.img2{
+    text-align: center;
+}
+p{
+    float: right;
+}

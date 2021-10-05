@@ -1,0 +1,51 @@
+body{
+    background: url(erdo.jpg);
+    color: #004400;
+}
+.content{
+    margin: 0 auto;
+    width: 75%;
+}
+.header{
+    min-width: 500px;
+    text-align: center;
+}
+.inf{
+    font-size: 18px;
+}
+.inf > p{
+    font-weight: bold;
+}
+.inf a{
+    color: #007700;
+}
+
+span{
+    font-weight: normal;
+}
+.imgdiv{
+    text-align: center;
+    margin: 0 auto;
+}
+img{
+    width: 150px;
+    height: 120px;
+}
+table{
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 480px;
+}
+td, th{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: right;
+}
+.ejszaka{
+    text-align: center;
+    font-weight: normal;
+}
+.gif{
+    left: 79%;
+    position: absolute;
+}

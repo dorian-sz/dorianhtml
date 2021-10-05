@@ -1,0 +1,51 @@
+body { 
+    background: url('back.jpg'); 
+}
+.content {
+    margin: 0 auto; 
+    width: 1000px; 
+}
+.header { 
+    min-width: 650px; 
+    max-width: 1000px; 
+    height: 240px; 
+    background: url('panorama.jpg'); 
+    background-position: center;
+    background-size: cover;
+}
+.header .crest { 
+    float: right; 
+    margin-right: 50px; 
+    margin-top: 20px; 
+    mix-blend-mode: multiply; 
+    width: 150px; 
+    height: 150px; 
+}
+.header h1 { 
+    float: left; 
+    margin-left: 20px; 
+    margin-top: 20px; 
+}
+
+.panel { 
+    width: 450px; 
+    background: #5B9CEA; 
+}
+.align-left { 
+    float: left; 
+}
+.align-right { 
+    float: right; 
+}
+table { 
+    background: #B0D1F1; 
+    border-collapse: collapse; 
+}
+table, td { 
+    border: 1px solid black; 
+}
+td { 
+    width: 50%; 
+    text-align: center; 
+    font-weight: bold; 
+}
