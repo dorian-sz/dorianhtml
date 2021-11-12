@@ -1,0 +1,78 @@
+*{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.homeImage{
+  margin: 0 auto;
+  width: 85%;
+  height: 100vh;
+  background-image: url(img/BMW\ iX\ 2HUN_1680x756.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.navbar-container{
+  width: 100%;
+  
+  
+}
+
+.navbar{
+  width: 70%;
+  margin: auto;
+  color: white;
+  flex-direction: column;
+}
+
+.flex-grid {
+  display: flex;
+  border-bottom: 1px solid rgb(167, 167, 167);
+  
+}
+
+
+.flex-grid .col {
+  flex-direction: column;
+  padding: 35px 20px;
+  width: auto ;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: rgb(0, 132, 255) 4px solid;
+  border-color: transparent;
+
+  
+}
+
+.flex-grid .logocol{
+  padding: 20px;
+  margin-left: auto;
+}
+
+.flex-grid .col:hover{
+  
+  border-color: rgb(0, 132, 255);
+}
+
+.bmwlogo{
+  padding: 20px;
+
+}
+
+.flex-grid .margin{
+  margin-left: auto;
+}
+
+.logocol .img{
+  height: 55px;
+  width: 55px;
+}
+
+.flex-grid .logo{
+  
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
