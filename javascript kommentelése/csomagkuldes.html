@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form name="feecalculator">
+
+        <label>Adja meg a város nevét:</label>
+        <!--Kattintáskor elindítja a popMenu functiont ami feltölti a select menüt-->
+        <select id="town" onclick="popMenu(document.feecalculator.town)">
+            <option>Válasszon várost</option>
+        </select>
+
+        <label>Adja meg a csomag sulyát (kg):</label>
+        <input type="number" name="weight" id="weight">
+        <!--elindítja a feeCalculator functiont a súj és város paraméterrel-->
+        <input type="button" value="Kalkulál!" onclick="feeCalculator(document.feecalculator.town.value, document.feecalculator.weight.value)">   
+
+
+
+    </form>
+
+    <script>
+
+        //ez a function tölti fel az option menüt
+        function popMenu(t) {
+
+            //2d tömb amiben benne van a város neve és távolsága Debrecentől
+            var townList = [['Budapest', 232], ['Szeged', 230], ['Miskolc', 114], ['Pécs', 474], ['Győr', 377], ['Nyiregyháza', 50], 
+            ['Kecskemét', 184], ['Székesfehérvár', 317], ['Szombathely', 458], ['Szolnok', 130]];
+            
+            //hogy ha az opció menü hossza egyenlő az 1-el akkor töltse fel a menüt
+            if (t.options.length == 1) {
+
+                //for ciklus ami minden element 
+                for(var i = 0; i < townList.length; i++) {
+                    //2d-s tömböt átváltja 1d-s tömbre
+                    var towns = townList[i];
+                    //csinál egy option elementet
+                    var el = document.createElement("option");
+                    //az option elementnek a kiírása egyenlő lesz a város nevével
+                    el.textContent = towns[0];
+                    //az option element értéke egyenlő lesz a távolsággal
+                    el.value = towns[1];
+                    //hozzá adja a select menühöz az optiont
+                    t.appendChild(el);
+                }
+            }
+        }
+
+        //kiszámolja a csomag küldési díjat
+        function feeCalculator(d, w) {
+
+            //súj díj
+            var weightFee = w * 100;
+            //távolsági díj
+            var distanceFee = d * 150;
+            //összesen + az alapdíj
+            var total = weightFee + distanceFee + 2000;
+            //kiírja a díjat a weboldalra
+            alert("Alapdíj: 2000Ft," + " Súlydíj: " + weightFee +"Ft," + " Km díj: " + distanceFee + "Ft," + " Összesen: " + total + "Ft")
+        }
+
+    </script>
+    
+    <body>
+
+</body>
+</html>
